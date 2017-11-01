@@ -7,7 +7,7 @@
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/grapesjs/dist/grapes.min.js"></script>
-    <script src="./dist/grapesjs-plugin.min.js"></script>
+    <script src="./dist/grapesjs-clarity-components.min.js"></script>
     <style>
       body,
       html {
@@ -29,9 +29,9 @@
         container : '#gjs',
         fromElement: true,
 
-        plugins: ['YOUR-PLUGIN-NAME'],
+        plugins: ['grapesjs-clarity-components'],
         pluginsOpts: {
-          'YOUR-PLUGIN-NAME': {}
+          'grapesjs-clarity-components': {}
         }
       });
       window.editor = editor;

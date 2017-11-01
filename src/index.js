@@ -1,7 +1,7 @@
 import loadComponents from './components';
 import loadBlocks from './blocks';
 
-export default grapesjs.plugins.add('YOUR-PLUGIN-NAME', (editor, opts = {}) => {
+export default grapesjs.plugins.add('grapesjs-clarity-components', (editor, opts = {}) => {
   let config = opts;
 
   let defaults = {

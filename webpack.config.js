@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var pkg = require('./package.json');
-var name = 'YOUR-PLUGIN-NAME';
+var name = 'grapesjs-clarity-components';
 var env = process.env.WEBPACK_ENV;
 var plugins = [];
 

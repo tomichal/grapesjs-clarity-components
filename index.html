@@ -1,40 +1,50 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>GrapesJS Plugin</title>
-    <link rel="stylesheet" href="./node_modules/grapesjs/dist/css/grapes.min.css">
+<head>
+  <meta charset="utf-8">
+  <title>GrapesJS Clarity Components</title>
+  <link rel="stylesheet" href="./node_modules/grapesjs/dist/css/grapes.min.css">
 
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/grapesjs/dist/grapes.min.js"></script>
-    <script src="./dist/grapesjs-clarity-components.min.js"></script>
-    <style>
-      body,
-      html {
-        height: 100%;
-        margin: 0;
-      }
-    </style>
-  </head>
-  <body>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/grapesjs/dist/grapes.min.js"></script>
+  <script src="./dist/grapesjs-clarity-components.min.js"></script>
 
-    <div id="gjs" style="height:0px; overflow:hidden"></div>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="gjs" style="height:0px; overflow:hidden"></div>
 
 
-    <script type="text/javascript">
-      var editor = grapesjs.init({
-        height: '100%',
-        noticeOnUnload: 0,
-        storageManager:{autoload: 0},
-        container : '#gjs',
-        fromElement: true,
-
-        plugins: ['grapesjs-clarity-components'],
-        pluginsOpts: {
-          'grapesjs-clarity-components': {}
-        }
-      });
-      window.editor = editor;
-    </script>
-  </body>
+<script type="text/javascript">
+  var editor = grapesjs.init({
+    height: '100%',
+    noticeOnUnload: 0,
+    storageManager: {autoload: 0},
+    container: '#gjs',
+    fromElement: true,
+    canvas: {
+      styles: [
+        './node_modules/clarity-ui/clarity-ui.css',
+        './node_modules/clarity-icons/clarity-icons.css'
+      ],
+      scripts: [
+        './node_modules/@webcomponents/custom-elements/custom-elements.min.js',
+        './node_modules/clarity-icons/clarity-icons.min.js'
+      ]
+    },
+    plugins: ['grapesjs-clarity-components'],
+    pluginsOpts: {
+      'grapesjs-clarity-components': {}
+    }
+  });
+  window.editor = editor;
+</script>
+</body>
 </html>

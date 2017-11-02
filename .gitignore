@@ -1,6 +1,9 @@
 .DS_Store
 .idea
-private/
-node_modules/
+
 .eslintrc
 *.log
+private/
+node_modules/
+dist/
+
